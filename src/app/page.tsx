@@ -60,7 +60,7 @@ export default function Home() {
           variants={item}
           className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6 leading-tight"
         >
-          Hallo, I'm<br />Farhan Wahyuda
+          Hallo, I&apos;m<br />Farhan Wahyuda
         </motion.h1>
         <motion.p 
           variants={item}

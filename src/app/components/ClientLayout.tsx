@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, useState, useEffect } from "react";
+import Link from "next/link";
 
 type ThemeContextType = {
   darkMode: boolean;
@@ -154,10 +155,10 @@ const Navigation = () => {
           <span className="text-xl font-bold text-blue-700 dark:text-blue-400 tracking-tight">MyPortfolio</span>
         </div>
         <nav className="hidden md:flex gap-8">
-          <a href="/" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</a>
-          <a href="/about" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
-          <a href="/projects" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</a>
-          <a href="/experience" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Experience</a>
+          <Link href="/" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</Link>
+          <Link href="/about" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</Link>
+          <Link href="/projects" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</Link>
+          <Link href="/experience" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Experience</Link>
         </nav>
         <div className="flex items-center gap-4">
           <ThemeToggle />
@@ -174,10 +175,10 @@ const Navigation = () => {
       </div>
       {menuOpen && (
         <nav className="md:hidden flex flex-col gap-2 px-4 pb-4 animate-fade-in">
-          <a href="/" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2">Home</a>
-          <a href="/about" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2">About</a>
-          <a href="/projects" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2">Projects</a>
-          <a href="/experience" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2">Experience</a>
+          <Link href="/" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 block">Home</Link>
+          <Link href="/about" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 block">About</Link>
+          <Link href="/projects" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 block">Projects</Link>
+          <Link href="/experience" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 block">Experience</Link>
         </nav>
       )}
     </header>

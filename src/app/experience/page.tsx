@@ -1,8 +1,9 @@
 'use client';
 
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { FaBriefcase, FaGraduationCap, FaUsers } from 'react-icons/fa';
+import Image from 'next/image';
 import styles from './experience.module.css';
 
 interface ExperienceItem {
@@ -27,6 +28,7 @@ const containerVariants: Variants = {
   }
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -159,10 +161,13 @@ const ExperienceItem = ({ exp, index }: { exp: ExperienceItem; index: number }) 
         </div>
         {exp.logo && (
           <div className={styles.companyLogoContainer}>
-            <img 
+            <Image 
               src={exp.logo} 
-              alt={`${exp.company} logo`} 
+              alt={`${exp.company} logo`}
+              width={48}
+              height={48}
               className={styles.companyLogo}
+              unoptimized
             />
           </div>
         )}
