@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
 // For GitHub Pages, use empty string if repository name is 'username.github.io', otherwise use repository name
-const repoName = '';
+const repoName = 'portofolio';
 
 const nextConfig = {
   output: 'export',

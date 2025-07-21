@@ -10,7 +10,7 @@ const projects = [
     description: `Proyek ini merupakan bagian dari kompetisi nasional Lomba Inovasi Program Pemberdayaan dan Pembangunan Desa (LIP3D) yang bertujuan mendorong kontribusi mahasiswa dalam memperkuat kapasitas desa untuk mencapai target Rencana Pembangunan Jangka Menengah (RPJM) nasional.
 
 Fokus program adalah merancang solusi berbasis riset dan teknologi untuk meningkatkan produktivitas desa, khususnya melalui pengembangan kewirausahaan lokal, peningkatan kualitas SDM, dan pemulihan infrastruktur pasca pandemi.`,
-    image: '/PERKEBUNAN.jpg',
+    image: '  PERKEBUNAN.jpg',
     tags: ['Community Development', 'Innovation', 'Team Project']
   },
   {
