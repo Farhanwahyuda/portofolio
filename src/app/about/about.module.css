@@ -1,0 +1,147 @@
+.aboutMain {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 24px rgba(30, 41, 59, 0.08);
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(30, 41, 59, 0.12);
+}
+
+.aboutTitle {
+  color: #2563eb;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.aboutContent {
+  color: #374151;
+  line-height: 1.8;
+}
+
+.aboutParagraph {
+  margin-bottom: 1.25rem;
+  text-align: justify;
+}
+
+/* Education Card Specific Styles */
+.educationCard {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+}
+
+.sectionTitle {
+  color: #1e40af;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #3b82f6;
+  border-radius: 3px;
+}
+
+.educationItem {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: white;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.educationItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.educationLogo {
+  width: 56px;
+  height: 56px;
+  border-radius: 0.75rem;
+  background: white;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.educationDetails {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.gpa {
+  color: #e11d48;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 600px) {
+  .aboutMain {
+    padding: 0 0.5rem;
+    margin: 1.5rem auto;
+  }
+  
+  .card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .aboutTitle, .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .educationItem {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .educationLogo {
+    margin-bottom: 0.75rem;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .aboutMain {
+    background: rgb(0, 0, 0);
+    border-color: #334155;
+  }
+  .aboutTitle {
+    color: #60a5fa;
+  }
+  .aboutParagraph {
+    color: #000000;
+  }
+}
