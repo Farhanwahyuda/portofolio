@@ -1,0 +1,21 @@
+.projectDescription {
+  color: #303f54;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+.projectDescription p {
+  margin: 0.5rem 0; /* Reduced paragraph spacing */
+  text-align: justify;
+}
+
+.projectDescription p:first-child {
+  margin-top: 0;
+  text-align: justify;
+}
+
+.projectDescription p:last-child {
+  margin-bottom: 0;
+  text-align: justify;
+}

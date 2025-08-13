@@ -1,0 +1,44 @@
+.experienceTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.experienceTag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  background-color: #e3f2fd; /* Light blue background */
+  color: #1976d2; /* Darker blue text */
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: justify;
+  transition: all 0.2s ease;
+  border: 1px solid #bbdefb; /* Lighter blue border */
+}
+
+.experienceTag:hover {
+  background-color: #bbdefb; /* Lighter blue on hover */
+  transform: translateY(-1px);
+  border-color: #1976d2; /* Darker blue border on hover */
+  box-shadow: 0 2px 4px rgba(25, 118, 210, 0.2);
+}
+
+/* Remove category-specific styles since we're using a uniform blue theme */
+.experienceTag--management,
+.experienceTag--technical,
+.experienceTag--communication,
+.experienceTag--leadership {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  border-color: #bbdefb;
+}
+
+.experienceTag--management:hover,
+.experienceTag--technical:hover,
+.experienceTag--communication:hover,
+.experienceTag--leadership:hover {
+  background-color: #bbdefb;
+  border-color: #1976d2;
+  box-shadow: 0 2px 4px rgba(25, 118, 210, 0.2);
+}
