@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
+    "predeploy": "set NODE_ENV=production&& next build", 
+    "deploy": "set NODE_ENV=production&& next build&& gh-pages -d out", 
     "postdeploy": "echo 'Successfully deployed to GitHub Pages! https://farhanwahyuda.github.io/portofolio'"
   },
   "homepage": "https://farhanwahyuda.github.io/portofolio",
