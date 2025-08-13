@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "set NODE_ENV=production&& next build", 
-    "deploy": "set NODE_ENV=production&& next build&& gh-pages -d out", 
+    "predeploy": "set NODE_ENV=production&& next build",
+    "deploy": "set NODE_ENV=production&& next build&& gh-pages -d out",
     "postdeploy": "echo 'Successfully deployed to GitHub Pages! https://farhanwahyuda.github.io/portofolio'"
   },
   "homepage": "https://farhanwahyuda.github.io/portofolio",
@@ -21,14 +21,19 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
     "gh-pages": "^6.3.0",
-    "tailwindcss": "^4",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5"
   }
 }
