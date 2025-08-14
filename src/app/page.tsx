@@ -70,7 +70,7 @@ export default function Home() {
         </motion.p>
         <motion.div variants={item} className="mb-8">
           <motion.a 
-            href="/file/CV ATS Farhan Wahyuda.pdf" 
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/file/CV ATS Farhan Wahyuda.pdf`} 
             download
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 rounded-full shadow transition-colors cursor-pointer"
             whileHover={{ scale: 1.05 }}
@@ -95,7 +95,7 @@ export default function Home() {
             <WhatsappIcon className="w-6 h-6" />
           </motion.a>
           <motion.a 
-            href="https://linkedin.com/in/farhanwahyuda" 
+            href="https://www.linkedin.com/in/farhan-wahyuda-23b14b229/" 
             target="_blank" 
             rel="noopener noreferrer" 
             aria-label="LinkedIn" 
@@ -141,7 +141,7 @@ export default function Home() {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
           <Image
-            src="/image/profile.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/profile.png`}
             alt="Farhan Wahyuda profile photo"
             width={800}
             height={800}

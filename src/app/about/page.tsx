@@ -94,7 +94,7 @@ export default function About() {
           whileHover={{ scale: 1.02 }}
         >
           <motion.img
-            src="/image/UMC.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/UMC.png`}
             alt="Universitas Muhammadiyah Cirebon Logo"
             className={styles.educationLogo}
             initial={{ opacity: 0, rotate: -10 }}
@@ -139,7 +139,7 @@ export default function About() {
           >
             <div className={styles.languageIcon}>
               <Image 
-                src="/image/Indonesia.png" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/Indonesia.png`} 
                 alt="Bahasa Indonesia" 
                 width={32} 
                 height={32} 
@@ -159,7 +159,7 @@ export default function About() {
           >
             <div className={styles.languageIcon}>
               <Image 
-                src="/image/UK.png" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/UK.png`}
                 alt="English" 
                 width={32} 
                 height={32} 
@@ -201,7 +201,7 @@ export default function About() {
           >
             <div className={styles.skillIcon}>
               <Image 
-                src="/image/excel.png" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/Excel.png`}
                 alt="Microsoft Excel" 
                 width={40} 
                 height={40} 
@@ -217,7 +217,7 @@ export default function About() {
           >
             <div className={styles.skillIcon}>
               <Image 
-                src="/image/accurate.png" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/accurate.png`}
                 alt="Accurate" 
                 width={40} 
                 height={40} 
@@ -233,7 +233,7 @@ export default function About() {
           >
             <div className={styles.skillIcon}>
               <Image 
-                src="/image/visio.png" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/Visio.png`} 
                 alt="Microsoft Visio" 
                 width={40} 
                 height={40} 
@@ -249,7 +249,7 @@ export default function About() {
           >
             <div className={styles.skillIcon}>
               <Image 
-                src="/image/Canva.svg" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/Canva.svg`}
                 alt="Canva" 
                 width={40} 
                 height={40} 
@@ -265,7 +265,7 @@ export default function About() {
           >
             <div className={styles.skillIcon}>
               <Image 
-                src="/image/Arena.png" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/Arena.png`}
                 alt="Arena Simulation" 
                 width={40} 
                 height={40} 
@@ -281,7 +281,7 @@ export default function About() {
           >
             <div className={styles.skillIcon}>
               <Image 
-                src="/image/Solid.png" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/Solid.png`}
                 alt="solidworks" 
                 width={40} 
                 height={40} 

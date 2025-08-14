@@ -57,7 +57,7 @@ const internshipExperience: ExperienceItem[] = [
     ],
     icon: <FaBriefcase className={styles.experienceIcon} />,
     delay: 0.2,
-    logo: '/image/Samudera selang logo.png',
+    logo:`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/Samudera selang logo.png`,
     tags: ['Warehouse Management System', 'Data Entry', 'Process Improvement', 'Stock Opname','Audit','FMEA','5 Whys']
   },
   {
@@ -72,7 +72,7 @@ const internshipExperience: ExperienceItem[] = [
     ],
     icon: <FaBriefcase className={styles.experienceIcon} />,
     delay: 0.2,
-    logo: '/image/Arida logo.png',
+    logo: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/Arida logo.png`,
     tags: ['Production Management', 'Quality Control', 'Material Management', 'Process Monitoring']
   },
   {
@@ -88,7 +88,7 @@ const internshipExperience: ExperienceItem[] = [
     ],
     icon: <FaGraduationCap className={styles.experienceIcon} />,
     delay: 0.2,
-    logo: '/image/Logo Kampus Merdeka.png',
+    logo: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/Logo Kampus Merdeka.png`,
     tags: ['Education', 'Teaching', 'Digital Learning', 'Collaboration', 'Content Development']
   },
 ];
@@ -108,7 +108,7 @@ const organizationalExperience: ExperienceItem[] = [
     ],
     icon: <FaUsers className={styles.experienceIcon} />,
     delay: 0.4,
-    logo: '/image/Logo HMTI.png',
+    logo: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/Logo HMTI.png`,
     tags: ['Leadership', 'Communication', 'Managing Social Media Accounts', 'Team Management', 'Content Creation']
   },
   {
@@ -123,7 +123,7 @@ const organizationalExperience: ExperienceItem[] = [
     ],
     icon: <FaUsers className={styles.experienceIcon} />,
     delay: 0.6,
-    logo: '/image/IESC.png', // Make sure to add the logo file to your public/image directory
+    logo: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/image/IESC.png`,// Make sure to add the logo file to your public/image directory
     tags: ['Networking', 'Professional Development', 'Technical Knowledge', 'Collaboration']
   }
 ];

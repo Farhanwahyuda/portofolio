@@ -8,7 +8,7 @@ const projects = [
   {
     title: 'Teknologi Hidrodestilasi Pala di Perkebunan Pala Desa Gunungmanik Kecamatan Ciniru Kabupaten Kuningan',
     description:`Proyek ini merupakan bagian dari kompetisi nasional Lomba Inovasi Program Pemberdayaan dan Pembangunan Desa (LIP3D) yang bertujuan mendorong kontribusi mahasiswa dalam memperkuat kapasitas desa untuk mencapai target Rencana Pembangunan Jangka Menengah (RPJM) nasional. Fokus program adalah merancang solusi berbasis riset dan teknologi untuk meningkatkan produktivitas desa, khususnya melalui pengembangan kewirausahaan lokal, peningkatan kualitas SDM, dan pemulihan infrastruktur pasca pandemi`,
-    image: '/PERKEBUNAN.jpg',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/PERKEBUNAN.jpg`,
     tags: ['Pengembangan Masyarakat', 'Inovasi', 'Pemecahan Masalah','Proyek Akademik','Kolaborasi','Kompetisi Nasional','Pengembangan Teknologi']
   },
   {
