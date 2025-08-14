@@ -3,10 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClientLayout } from "./components/ClientLayout";
 
-// This will be set at build time based on the environment
-const basePath = process.env.NODE_ENV === 'production' 
-  ? process.env.NEXT_PUBLIC_BASE_PATH || '' 
-  : '';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,13 +29,10 @@ export default function RootLayout({
       lang="en" 
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable}`}
-      data-base-path={basePath}
     >
       <head>
         {/* Only set base href in production */}
-        {process.env.NODE_ENV === 'production' && basePath && (
-          <base href={`${basePath}/`} />
-        )}
+
         {/* Preconnect to external domains */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -48,7 +41,7 @@ export default function RootLayout({
         className="antialiased bg-gray-50 dark:bg-gray-950 transition-colors duration-300"
         suppressHydrationWarning
       >
-        <ClientLayout basePath={basePath}>
+        <ClientLayout>
           {children}
         </ClientLayout>
       </body>
